@@ -35,6 +35,7 @@ APP.Data = (function() {
     });
   }
 
+  // same as before
   function getStoryComment(id, callback) {
 
     var storyCommentURL = HN_STORYDETAILS_URL.replace(/\[ID\]/, id);

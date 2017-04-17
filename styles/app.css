@@ -238,12 +238,22 @@ main.loading {
       0px 2px 7px 0px rgba(0, 0, 0, 0.10);
 
   overflow: hidden;
-  transition: opacity 0.3s ease-out;
+  /*transition: opacity 0.3s ease-out;*/
+  transition: transform 0.3s;
+  will-change: transform;
 }
 
 .story-details * {
   will-change: transform;
   transform: translateZ(0);
+}
+
+.story-details.visible {
+  transform: translateX(-100vw);
+}
+
+.story-details.hidden {
+  transform: translateX(0);
 }
 
 .story-details__content {
